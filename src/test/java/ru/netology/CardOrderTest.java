@@ -41,7 +41,7 @@ class CardOrderTest {
     void whenAppIsCompleted() {
         driver.get("http://localhost:9999");
         driver.findElement(By.name("name")).sendKeys("и-м-я Фамилия");
-        driver.findElement(By.name("phone")).sendKeys("+79991112233");
+        driver.findElement(By.name("phone")).sendKeys("79991112233");
         driver.findElement(By.className("checkbox__box")).click();
         driver.findElement(By.className("button")).click();
         String text = driver.findElement(By.cssSelector(".paragraph")).getText();
